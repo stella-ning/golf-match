@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /*--公共样式---*/
+html,
+body,
+a,
+a:hover {
+  color: #FFFFFF;
+}
+body {
+  background: #C9CACA;
+}
 /*--PC端样式---*/
 @media screen and (min-width: 1170px) {
   .navbar {
@@ -27,13 +36,40 @@
     color: #FEFEFE;
   }
   main {
+    width: 1200px;
     min-height: 500px;
+    margin: 0 auto;
   }
   footer {
     width: 100%;
     height: 793px;
     background: url('../images/footer-bg.jpg') no-repeat;
     background-size: cover;
+    padding-top: 109px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  footer .footer-top {
+    margin-bottom: 5px;
+  }
+  footer .footer-link {
+    margin-bottom: 30px;
+  }
+  footer .footer-link a {
+    padding: 0 3px;
+  }
+  footer .footer-center {
+    margin-bottom: 45px;
+  }
+  footer .footer-center .app-ewm {
+    margin-right: 118px;
+  }
+  footer .footer-center .logo-list img {
+    margin-right: 38px;
+  }
+  footer .footer-bottom .b-link {
+    padding-right: 45px;
   }
 }
 /*--移动端样式---*/
